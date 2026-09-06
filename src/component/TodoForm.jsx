@@ -11,6 +11,7 @@ const TodoForm = (props) => {
       text: text,
       compleate: false,
     });
+    setText("");
   };
   const handleChange = (e) => {
     setText(e.target.value);
@@ -21,7 +22,7 @@ const TodoForm = (props) => {
       <form action="" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="input-filed"
+          className="input-field "
           placeholder="Add Task"
           onChange={handleChange}
           value={text}

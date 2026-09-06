@@ -1,8 +1,15 @@
 const Todo = (props) => {
   return (
     <div className="d-f">
-      <div>{props.todo.text}</div>
-      <button className="delete-btn">X</button>
+      <div
+        className={props.todo.compleate === true ? "completed" : ""}
+        onClick={props.onCompleate}
+      >
+        {props.todo.text}
+      </div>
+      <button className="delete-btn" onClick={props.onDelete}>
+        X
+      </button>
     </div>
   );
 };

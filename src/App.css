@@ -1,12 +1,12 @@
-.container {
-  width: 350px;
+/* .container {
+  width: 360px;
   margin: auto;
   height: 500px;
   background-color: beige;
 }
 form {
-  height: 150px;
-  border-bottom: 1px solid;
+  height: 50px;
+  border-bottom: 0px solid;
   background-color: bisque;
   padding: 15px;
 }
@@ -16,6 +16,12 @@ form input {
 }
 form .btn {
   width: 100px;
+  font-size: 14px;
+  height: 34px;
+  cursor: pointer;
+}
+.btn-update {
+  width: 120px;
   font-size: 14px;
   height: 34px;
   cursor: pointer;
@@ -37,4 +43,88 @@ form .btn {
   color: aliceblue;
   cursor: pointer;
   border-radius: 50%;
+} */
+
+body {
+  background: #2b2c2f;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.input-field {
+  width: 220px;
+  height: 30px;
+  background: none;
+  margin-right: 15px;
+  outline: none;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  box-shadow:
+    3px 3px 3px #222327,
+    -3px -3px 3px #363636;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 18px;
+}
+.btn,
+.delete-btn {
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  box-shadow:
+    3px 3px 3px #222327,
+    -3px -3px 3px #363636;
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.delete-btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+.btn:hover,
+.input-field:hover,
+.delete-btn:hover {
+  box-shadow:
+    inset 3px 3px 3px #222327,
+    inset -3px -3px 3px #363636;
+}
+.d-f {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+.d-f > div {
+  cursor: pointer;
+}
+.completed {
+  color: #00ff00;
+}
+.todo-count {
+  color: #ffff;
+  margin-top: 15px;
+}
+.update-btn {
+  margin: 10px;
+  width: 200px;
+  margin: 10px 0;
+}
+.all-btn {
+  width: 200px;
+  margin: 10px 0;
 }
