@@ -2,6 +2,7 @@
   "name": "todolist-by-react-js",
   "private": true,
   "version": "0.0.0",
+  "homepage":"https://github.com/usfsaid/TodoList-by-React-Js.git",
   "type": "module",
   "scripts": {
     "dev": "vite",
