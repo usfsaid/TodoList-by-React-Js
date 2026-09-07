@@ -53,6 +53,22 @@ function App() {
         >
           Completed
         </button>
+        <button
+          className="update-btn btn"
+          onClick={() => setTodos(todos.filter((todo) => !todo.compleate))}
+        >
+          Remove Completed Task
+        </button>
+        <button
+          className="update-btn btn"
+          onClick={() =>
+            setTodos(
+              todos.map((todo) => ({ ...todo, compleate: !todo.compleate })),
+            )
+          }
+        >
+          Mark All Task
+        </button>
 
         {todos.map((todo) => {
           return (
